@@ -1,43 +1,59 @@
-#Token.sol
-This Ethereum smart contract represents the MyToken token contract. It's a straightforward ERC-20 compliant token contract that enables users to both mint and burn tokens.
+# token.sol
+This Solidity contract implements the MyToken token contract. It is a simple ERC-20 compatible token contract that allows users to mint and burn tokens.
 
-#Contract Information
-- SPDX License Identifier: MIT
-- Solidity Version: 0.8.18
+# Contract Details
+SPDX License Identifier: MIT
 
-#Contract Variables
+Solidity Version: 0.8.18
 
-1. token name
-   Type: string
-   Description: This variable stores the name of the token.
+Contract Variables
 
-2. token abrivation
-   Type: string
-   Description: This variable stores the abbreviation of the token.
+tokenName
 
-3. total supply
-   Type: uint
-   Description: This variable stores the total supply of the token.
+Type: string
 
-#Contract Functions
+Description: Stores the name of the token.
 
-1. mint(address account, uint value)
-    Description: This function allows the contract owner to mint new tokens and allocate them to a specified account.
-    Parameters:
-   account: The address of the account to which the tokens will be minted.
-   value: The amount of tokens to be minted.
+tokenAbbrv
 
-2. burn(address account, uint value)
-   Description: This function allows the contract owner to burn existing tokens from a specified account.
-   Parameters:
-   account: The address of the account from which the tokens will be burned.
-   value: The amount of tokens to be burned.
-#Usage
+Type: string
 
-1. Deploy the contract on the Ethereum network using Solidity compiler version 0.8.18 or a compatible version.
+Description: Stores the abbreviation of the token.
 
-2. Call the mint function to create new tokens and assign them to specific accounts.
+totalSupply
 
-3. Call the burn function to destroy existing tokens held by specific accounts.
+Type: uint
 
+Description: Stores the total supply of the token.
+
+# Contract Functions
+mint(address account, uint value)
+
+This function allows the contract owner to mint new tokens and assign them to a specified account.
+
+Parameters:
+
+account: The address of the account to which the tokens will be minted.
+
+value: The amount of tokens to be minted.
+
+burn(address account, uint value)
+
+This function allows the contract owner to burn existing tokens from a specified account.
+
+Parameters:
+
+account: The address of the account from which the tokens will be burned.
+
+value: The amount of tokens to be burned.
+
+# Auhor
+Tanay kumar rai
+
+# Usage
+Deploy the contract on the Ethereum network using Solidity compiler version 0.8.18 or compatible.
+
+Call the mint function to create new tokens and assign them to specific accounts.
+
+Call the burn function to destroy existing tokens from specific accounts.
 
